@@ -90,7 +90,7 @@ function buyButtonClicked() {
         var title = cartBox.getElementsByClassName("cart-product-title")[0].innerText;
         var price = cartBox.getElementsByClassName("cart-price")[0].innerText;
         var quantity = cartBox.getElementsByClassName("cart-quantity")[0].value;
-        var priceValue = parseFloat(price.replace('$','').replace(',', ''));
+        var priceValue = parseFloat(price.replace('₱','').replace(',', ''));
         var subtotalAmount = priceValue * quantity;
         orderDetails.push({ title: title, price: priceValue, quantity: quantity, subtotal_amount: subtotalAmount, invoice_number: invoiceNumber });    
     }
@@ -187,11 +187,11 @@ function updateTotal() {
         var cartBox = cartBoxes[i];
         var priceElement = cartBox.getElementsByClassName("cart-price")[0];
         var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
-        var price = parseFloat(priceElement.innerText.replace("", ""));
+        var price = parseFloat(priceElement.innerText.replace("₱", ""));
         var quantity = quantityElement.value;
         total = total + (price * quantity);
     }
         total = Math.round(total * 100) / 100;
         
-        document.getElementsByClassName("total-price")[0].innerText = total;
+        document.getElementsByClassName("total-price")[0].innerText = "₱" + total;
 }

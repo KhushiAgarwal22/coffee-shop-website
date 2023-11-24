@@ -502,7 +502,7 @@
         <section class="footer">
             <div class="footer-container">
                 <div class="logo">
-                    <img src="../assets/images/logo.png" class="img"><br />
+                    <img src="../assets/images/1989-modified.png" class="img"><br />
                     <i class="fas fa-envelope"></i>
                     <p>abfiguerrez18@gmail.com</p><br />
                     <i class="fas fa-phone"></i>
