@@ -9,7 +9,7 @@ $currentDate = date('Y-m-d');
 
 // Insert data into database
 foreach ($data as $item) {
-    $title = $item["title"];
+    $title = strval($item["title"]);
     $price = $item["price"];
     $quantity = $item["quantity"];
     $total = $item["total"];

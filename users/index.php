@@ -85,10 +85,11 @@
                 <button type="button" class="btn-buy">Checkout Now</button>
             </div>
         </header>
-
+         
         <!-- HERO SECTION -->
         <section class="home" id="home">
             <div class="content">
+                <br><br>
                 <h3>Welcome to KapeTann Coffee Shop, <?php echo $_SESSION['username']; ?>!</h3>
                 <p>
                     <strong>We are open 4:00 PM to 9:00 PM.</strong>
