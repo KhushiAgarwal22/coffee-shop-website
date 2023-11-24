@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <title>KapeTann Brewed Coffee Shop</title>
+        <title>CodEspresso Brewed Coffee Shop</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
         <!-- HEADER SECTION -->
         <header class="header">
             <a href="#" class="logo">
-                <img src="assets/images/logo.png" class="img-logo" alt="KapeTann Logo">
+                <img src="1989-modified.png" class="img-logo" alt="CodeSpresso Logo">
             </a>
 
             <!-- MAIN MENU FOR SMALLER DEVICES -->
@@ -74,7 +74,7 @@
                 </div>
                 <div class="total">
                     <div class="total-title">Total: </div>
-                    <div class="total-price">₱0</div>
+                    <div class="total-price">$0</div>
                 </div>
                 <!-- BUY BUTTON -->
                 <button type="button" class="btn-buy">Checkout Now</button>
@@ -84,7 +84,7 @@
         <!-- HERO SECTION -->
         <section class="home" id="home">
             <div class="content">
-                <h3>Welcome to KapeTann Coffee Shop, mga kap!</h3>
+                <h3>Welcome to CodEspresso Coffee Shop</h3>
                 <p>
                     <strong>We are open 4:00 PM to 9:00 PM.</strong>
                 </p>
@@ -100,9 +100,9 @@
                     <img src="assets/images/about-img.png" alt="" class="img-fluid">
                 </div>
                 <div class="content">
-                    <h3>Welcome to KapeTann!</h3>
+                    <h3>Welcome to codEspresso!</h3>
                     <p>
-                        At KapeTann Coffee Shop, we are passionate about coffee and believe
+                        At codEspresso Coffee Shop, we are passionate about coffee and believe
                         that every cup tells a story. We are a cozy coffee shop located
                         in the heart of the city, dedicated to providing an exceptional
                         coffee experience to our customers. Our love for coffee has led
@@ -131,7 +131,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-1.png" alt="" class="product-img">
                                 <h3 class="product-title">Americano - Hot Espresso (12 OZ)</h3>
-                                <div class="price">₱45.00</div>
+                                <div class="price">₱245.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
@@ -139,7 +139,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-2.png" alt="" class="product-img">
                                 <h3 class="product-title">Colombian Supremo Cup (12 OZ)</h3>
-                                <div class="price">₱40.00</div>
+                                <div class="price">₱240.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
@@ -147,7 +147,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-3.png" alt="" class="product-img">
                                 <h3 class="product-title">Nitro Cold Brew w/ Straw (12 OZ)</h3>
-                                <div class="price">₱50.00</div>
+                                <div class="price">₱250.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-4.png" alt="" class="product-img">
                                 <h3 class="product-title">Seasonal Single-Origin (12 OZ)</h3>
-                                <div class="price">₱30.00</div>
+                                <div class="price">₱330.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
@@ -165,7 +165,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-5.png" alt="" class="product-img">
                                 <h3 class="product-title">Indonesian Sumatra Mandheling (12 OZ)</h3>
-                                <div class="price">₱40.00</div>
+                                <div class="price">₱340.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
@@ -173,7 +173,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-6.png" alt="" class="product-img">
                                 <h3 class="product-title">Mint Mojito Iced Coffee (12 OZ)</h3>
-                                <div class="price">₱55.00</div>
+                                <div class="price">₱255.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div>
@@ -183,7 +183,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-7.png" alt="" class="product-img">
                                 <h3 class="product-title">Iced Americano (12 OZ)</h3>
-                                <div class="price">₱35.00</div>
+                                <div class="price">₱335.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
@@ -191,7 +191,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-8.png" alt="" class="product-img">
                                 <h3 class="product-title">Specialty Brews (12 OZ)</h3>
-                                <div class="price">₱85.00</div>
+                                <div class="price">₱285.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
@@ -199,7 +199,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-9.png" alt="" class="product-img">
                                 <h3 class="product-title">Seasonal Origin (12 OZ)</h3>
-                                <div class="price">₱80.00</div>
+                                <div class="price">₱280.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-10.png" alt="" class="product-img">
                                 <h3 class="product-title">Ethiopian Yirgacheffe Cup (12 OZ)</h3>
-                                <div class="price">₱55.00</div>
+                                <div class="price">₱355.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
@@ -217,7 +217,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-11.png" alt="" class="product-img">
                                 <h3 class="product-title">Cold Brew Tonic In a Cup (12 OZ)</h3>
-                                <div class="price">₱35.00</div>
+                                <div class="price">₱305.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
@@ -225,7 +225,7 @@
                             <div class="box">
                                 <img src="assets/images/cart-item-12.png" alt="" class="product-img">
                                 <h3 class="product-title">Caramel Cold Foam Cold Brew (12 OZ)</h3>
-                                <div class="price">₱55.00</div>
+                                <div class="price">₱255.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div>
@@ -421,8 +421,7 @@
                             <div class="box">
                                 <img src="assets/images/quote-img.png" alt="" class="quote">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                The vibe at this place totally got me hooked and I am gonna explore their entire menu because this place is bliss🤌🏻
                                 </p>
                                 <img src="assets/images/pic-1.png" alt="" class="user">
                                 <h3>Jane Doe</h3>
@@ -439,8 +438,7 @@
                             <div class="box">
                                 <img src="assets/images/quote-img.png" alt="" class="quote">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                It's a cosy, beautiful place. The staff here is the best, very comforting and friendly. It's my go to place for sure☕
                                 </p>
                                 <img src="assets/images/pic-2.png" alt="" class="user">
                                 <h3>John Doe</h3>
@@ -457,8 +455,7 @@
                             <div class="box">
                                 <img src="assets/images/quote-img.png" alt="" class="quote">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Perfect for a late morning coffee when you're in a rush, the service is so so so good🤩🤩
                                 </p>
                                 <img src="assets/images/pic-3.png" alt="" class="user">
                                 <h3>Jane Doe</h3>
@@ -505,7 +502,7 @@
                     <i class="fas fa-phone"></i>
                     <p>+63 917-134-1422</p><br />
                     <i class="fab fa-facebook-messenger"></i>
-                    <p>@kapetanncoffee</p><br />
+                    <p>@CodEspresso</p><br />
                 </div>
                 <div class="support">
                     <h2>Support</h2>
@@ -535,8 +532,8 @@
                 </div>
                 <div class="credit">
                     <hr /><br/>
-                    <h2>KapeTann Brewed Coffee © 2023 | All Rights Reserved.</h2>
-                    <h2>Designed by <span>Algo Filipino</span> | Teravision</h2>
+                    <h2>CodEspresso Brewed Coffee © 2023 | All Rights Reserved.</h2>
+                    <h2>Designed by <span>Khushi Agarwal | Arushi Kapkoti | Rishav Sachdeva</span></h2>
                 </div>
             </div>
         </section>
