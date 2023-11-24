@@ -9,22 +9,34 @@
     </head>
     <body>
         <?php
-            require('db.php');
+            $con = mysqli_connect("localhost","root","boomer2004@","coffee-shop");
+            if($con)
+            {
+                echo"hi";
+            }
+            // Check connection
+            if (mysqli_connect_errno())
+            {
+                echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            }
             // When form submitted, insert values into the database.
-            if (isset($_REQUEST['username'])) {
+            if (isset($_POST['username'])) {
+                echo"hiii";
                 // removes backslashes
-                $username = stripslashes($_REQUEST['username']);
                 //escapes special characters in a string
-                $username = mysqli_real_escape_string($con, $username);
+               /* $username = mysqli_real_escape_string($con, $username);
                 $name    = stripslashes($_REQUEST['name']);
                 $name    = mysqli_real_escape_string($con, $name);
                 $email    = stripslashes($_REQUEST['email']);
                 $email    = mysqli_real_escape_string($con, $email);
                 $password = stripslashes($_REQUEST['password']);
-                $password = mysqli_real_escape_string($con, $password);
-                $create_datetime = date("Y-m-d H:i:s");
-                $query    = "INSERT into `users` (name, username, password, email, create_datetime)
-                            VALUES ('$name', '$username', '" . md5($password) . "', '$email', '$create_datetime')";
+                $password = mysqli_real_escape_string($con, $password);*/
+                $name=strval($_POST['name']);
+                $email=strval($_POST['email']);
+                $password=strval($_POST['password']);
+                $username = strval($_POST['username']);
+                echo "$name $email $password $username";
+                $query = "INSERT INTO users (name, username, email, password) VALUES ('$name', '$username', '$email', '$password')";
                 $result   = mysqli_query($con, $query);
                 if ($result) {
                     echo "<script>
@@ -39,16 +51,16 @@
                 }
             } else {
         ?>
-            <form class="form" action="" method="post">
-                <center>
+            <form class="form"  method="post">
+                <div style="margin:auto">
                     <img src="../assets/images/logo.png" alt="" class="img img-fluid">
-                </center>
+            </div>
                 <hr />
                 <h1 class="login-title">Registration</h1>
-                <input type="text" class="login-input" name="name" placeholder="Name" required />
-                <input type="text" class="login-input" name="username" placeholder="Username" required />
-                <input type="text" class="login-input" name="email" placeholder="Email Adress" required>
-                <input type="password" class="login-input" name="password" placeholder="Password" required>
+                <input type="text" class="login-input" name="name" placeholder="Name"  />
+                <input type="text" class="login-input" name="username" placeholder="Username"  />
+                <input type="text" class="login-input" name="email" placeholder="Email Adress" >
+                <input type="password" class="login-input" name="password" placeholder="Password" >
                 <input type="submit" name="submit" value="Register" class="login-button">
                 <p class="link">Already have an account? <a href="login.php">Login here!</a></p>
             </form>

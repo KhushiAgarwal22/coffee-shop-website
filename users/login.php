@@ -10,20 +10,27 @@
     </head>
     <body>
         <?php
-            require('db.php');
+             $con = mysqli_connect("localhost","root","boomer2004@","coffee-shop");
+             // Check connection
+             if (mysqli_connect_errno()){
+                 echo "Failed to connect to MySQL: " . mysqli_connect_error();
+             }
+             
             session_start();
             // When form submitted, check and create user session.
             if (isset($_POST['username'])) {
-                $username = stripslashes($_REQUEST['username']);// removes backslashes
-                $username = mysqli_real_escape_string($con, $username);
-                $password = stripslashes($_REQUEST['password']);
-                $password = mysqli_real_escape_string($con, $password);
+                // $username = stripslashes($_REQUEST['username']);// removes backslashes
+                // $username = mysqli_real_escape_string($con, $username);
+                // $password = stripslashes($_REQUEST['password']);
+                // $password = mysqli_real_escape_string($con, $password);
                 // Check user is exist in the database
-                $query    = "SELECT * FROM `users` WHERE username='$username'
-                            AND password='" . md5($password) . "'";
+                $password=strval($_POST['password']);
+                $username = strval($_POST['username']);
+                $query    = "SELECT * FROM users WHERE username='$username'
+                            AND password='$password'";
                 $result = mysqli_query($con, $query);
                 $rows = mysqli_num_rows($result);
-                if ($rows == 1) {
+                if ($rows >= 1) {
                     $_SESSION['username'] = $username;
                     // Redirect to user dashboard page
                     header("Location: index.php");
